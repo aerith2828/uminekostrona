@@ -12,8 +12,8 @@ import VisualNovelPost from './components/VisualNovelPost';
 export const AppRoutes: FC = () => {
   return (
     <div>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />}>
             <Route path='' element={<NewsFeed />} />

@@ -49,7 +49,7 @@ const Gallery: FC = () => {
       <Modal
         open={open}
         onClose={() => setOpen(false)}
-        sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pt: '68px' }}
+        sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pt: 0 }}
       >
         <Fade in={open} timeout={300}>
           <Box

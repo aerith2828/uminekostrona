@@ -1,6 +1,7 @@
 body {
+  background-color: #000;
   background-image:
-    linear-gradient(rgba(4, 1, 8, 0.72), rgba(4, 1, 8, 0.72)),
+    linear-gradient(rgba(32, 24, 8, 0.64), rgba(32, 24, 8, 0.64)),
     url(/background.webp);
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,4 +20,14 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background: transparent;
+}
+
+/* ciemny zjazd od gory, jak w makiecie */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 60%);
 }

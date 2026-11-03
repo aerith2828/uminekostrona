@@ -10,7 +10,10 @@ const NewsFeed: FC = () => {
           key={index}
           title={post.title}
           date={post.date}
+          author={post.author}
+          embed={post.embed}
           content={post.content}
+          collapsible
         />
       ))}
     </>
